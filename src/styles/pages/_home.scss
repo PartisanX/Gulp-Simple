@@ -1,0 +1,38 @@
+// Style
+.hero {
+    width: 100%;
+    height: 100vh;
+
+
+    &__container {
+    }
+
+    &__intro {
+    }
+
+    &__title {
+        font-size: rem(144px);
+    }
+}
+
+.title-home {
+    & > * {
+        display: block;
+    }
+    &:first-child {
+
+    }
+    &:last-child {
+
+    }
+}
+
+.container {
+    max-width: rem(1280px);
+    margin: 0 auto;
+    line-height: 1.2;
+    letter-spacing: rem(0.5px);
+
+    &--lg {
+    }
+}

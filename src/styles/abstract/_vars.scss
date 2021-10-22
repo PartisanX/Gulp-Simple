@@ -1,0 +1,35 @@
+// Colors
+:root {
+    // Solid colors
+    --color-white: #ffffff;
+    --color-gray: #ededed;
+    --color-dark: #010101;
+    --color-aqua: #02FAAF;
+
+    // Linear gradient colors
+}
+
+// Base font
+$base-font: 'Inter', sans-serif;
+
+// Breakepoints
+$breakpoints: (
+	// Min
+	"min-xxs": ("min-width": 320),
+	"min-xs":  ("min-width": 480),
+	"min-md": ("min-width": 960),
+	"min-sm": ("min-width": 768),
+	"min-lg": ("min-width": 1200),
+	"min-xl": ("min-width": 1400),
+	"min-xxl": ("min-width": 1640),
+
+	// Max
+	"max-xxs": ("max-width": 319.98),
+	"max-xs": ("max-width": 479.98),
+	"max-sm": ("max-width": 767.98),
+	"max-md": ("max-width": 959.98),
+	"max-lg": ("max-width": 1199.98),
+	"max-xl": ("max-width": 1399.98),
+	"max-xxl": ("max-width": 1639.98),
+)!default;
+

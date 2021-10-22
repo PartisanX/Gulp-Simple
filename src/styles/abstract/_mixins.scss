@@ -1,0 +1,42 @@
+// Brakepoints
+@mixin media($width, $orientation: false) {
+    $size: map-get($breakpoints, $width);
+    
+    @if not $orientation {
+        @each $key, $val in $size {
+            $breakpoint: ($key + ':') + ($val + 0px);
+            @media screen and (#{$breakpoint}) {
+                @content
+            }
+           
+        } 
+       
+    } @else {
+        @each $key, $val in $size {
+            $breakpoint: ($key + ':') + ($val + 0px);
+            @media screen and (#{$breakpoint}) {
+                @include orientation($orientation) {
+                    @content
+                }
+            }
+           
+        } 
+    }
+}
+
+// Fonts
+@mixin font-face($font-family, $url, $weight) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src: url('../static/fonts/#{$url}.woff2') format('woff2'),
+		url('../static/fonts/#{$url}.woff') format('woff');
+		font-weight: #{$weight};
+		font-display: swap;
+		font-style: normal;
+	}
+}
+
+// Grid
+@mixin grid($colls) {
+	
+}
